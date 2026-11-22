@@ -1,0 +1,33 @@
+:root {
+  color-scheme: light dark;
+  font: 14px system-ui, sans-serif;
+}
+
+body {
+  margin: 16px;
+  width: 248px;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button {
+  min-height: 30px;
+  padding-inline: 10px;
+}
+
+#controls {
+  margin-top: 8px;
+}
+
+p {
+  margin-bottom: 0;
+}

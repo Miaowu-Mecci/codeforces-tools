@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cf-submit"
+version = "0.1.0"
+description = "Submit local C++ solutions to Codeforces Contests and Gyms"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31,<3", "beautifulsoup4>=4.12,<5"]
+
+[project.scripts]
+submit = "cf_submit.cli:submit_main"
+cfset = "cf_submit.cli:set_main"
+cflogin = "cf_submit.cli:login_main"
+
+[tool.setuptools.packages.find]
+include = ["cf_submit"]
